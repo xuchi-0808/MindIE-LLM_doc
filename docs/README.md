@@ -4,9 +4,10 @@ hide:
   - toc
 ---
 
-# MindIE LLM
+<div style="text-align: center; margin: 0.5rem 0 0.3rem 0; font-family: 'Avenir Next', 'Avenir', 'Century Gothic', 'Segoe UI', sans-serif;">
+  <span style="font-size: 4.5rem; font-weight: 300; letter-spacing: 0.02em;">MindIE-LLM</span>
+</div>
 
-面向昇腾 NPU 的高性能大语言模型推理引擎
 
 MindIE LLM（Mind Inference Engine Large Language Model）是 MindIE 下的大语言模型推理组件，基于昇腾硬件提供业界通用大模型推理能力，同时提供多并发请求的调度功能。
 
