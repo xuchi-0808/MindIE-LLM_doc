@@ -1,11 +1,10 @@
-site_name: MindIE-LLM
+site_name: MindIE-LLM-Doc
 site_url: https://mindie-llm-doc.readthedocs.io/zh-cn/latest/
 site_author: MindIE-LLM Team
 site_description: 华为昇腾大语言模型推理引擎文档
 docs_dir: docs/zh
 repo_url: https://gitcode.com/Ascend/MindIE-LLM
 repo_name: MindIE-LLM
-# edit_uri: blob/master/docs/zh/
 
 theme:
   name: material
