@@ -10,7 +10,6 @@ hide:
   <span style="font-size: 4.5rem; font-weight: 300; letter-spacing: 0.02em;">MindIE-LLM</span>
 </div>
 
-
 MindIE LLM（Mind Inference Engine Large Language Model）是 MindIE 下的大语言模型推理组件，基于昇腾硬件提供业界通用大模型推理能力，同时提供多并发请求的调度功能。
 
 根据你的使用场景选择入口：
