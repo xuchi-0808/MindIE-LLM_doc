@@ -32,6 +32,7 @@ nav:
       - 兼容性工具配置: user_guide/user_manual/compatibility_tool_configuration.md
       - Prefill/Decode 混合部署: user_guide/user_manual/prefill_decode_mixed_deployment.md
       - 虚拟机手动绑核: user_guide/user_manual/introduction_to_manual_cpu_binding_for_virtual_machines.md
+      - Rank Table File 配置: user_guide/user_manual/rank_table_file_configuration.md
     - 特性:
       - 特性总览: user_guide/feature/README.md
       - 量化:
@@ -60,6 +61,7 @@ nav:
       - 解析:
         - Prefix Cache: user_guide/feature/prefix_cache.md
         - KV Cache 池化: user_guide/feature/kv_cache_pool.md
+        - MemPool: user_guide/feature/mempool.md
         - 离线权重切分: user_guide/feature/offline_weight_partitioning.md
       - 模型特性:
         - MoE: user_guide/feature/moe.md
@@ -83,6 +85,7 @@ nav:
       - MoE: developer_guide/MoE.md
       - RoPEFactory: developer_guide/RoPEFactoryGuide.md
     - 编译安装: developer_guide/build_guide.md
+    - 本地构建 MkDocs 文档: build_mkdocs.md
     - 测试: developer_guide/test.md
     - 迁移适配:
       - ATB Models 迁移: developer_guide/migration_and_adaptation_guide/atb_models_migration_and_adaptation_guide.md
