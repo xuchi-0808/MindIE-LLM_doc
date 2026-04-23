@@ -6,7 +6,7 @@ MTP（Multi-Token Prediction，多Token预测）是DeepSeek中提出的一种用
 
 MTP推理的流程简图如下所示（以MTP=1为例）：
 
-![mtp_instruction](./figures/mtp_instruction.png){ width="1100" }
+<img src="./figures/mtp_instruction.png" width="1100">
 
 先主模型推理，输入的token是t1到tN，经过一轮推理之后，可以得到1个输出token tN+1，同时输出最后一层的hiddenstates。之后进行MTP层推理，MTP层的输入token是将主模型的prefilltokens进行roll操作，从t2开始输入，最后拼接上主模型输出的token tN+1。经过1轮推理得到草稿token tN+2。获得草稿token tN+2之后，我们将上一轮主模型输出的token tN+1和草稿token tN+2拼接，一起输入给主模型进行推理，得到token tN+2和token tN+3.  之后继续将输入token tN+1和草稿token tN+2的最后一层的hiddenstates和token tN+2和token tN+3输入给MTP层，得到新的草稿token，往后依次类推。
 
@@ -154,17 +154,17 @@ verify的目的是保证在开启和关闭MTP时能保证精度完全无损，�
 
 按自回归的推理，如下图所示，由token D推理得到E，由E推理得到F，以此类推。
 
-![verify](./figures/mtp_autoregressive.png){ width="400" }
+<img src="./figures/mtp_autoregressive.png" width="400">
 
 对于MTP开启的场景，如下图所示，需要比对草稿E和由D输出的自回归的tokenE是否是相同的。如果相同，就意味着由草稿E得到的tokenF也是正确的。反之，如果不相等，说明由这个草稿token e推理得到的f就是错误的，所以不可以接收这个token。
 
-![verify](./figures/mtp_verify.png){ width="1000" }
+<img src="./figures/mtp_verify.png" width="1000">
 
 # 代码调用流程图示
 
 以集中式、同步调度场景为例（分布式省去generator torch中的dp切分和padding计算），给出MindIE_LLM仓中MTP的代码运行流程。
 
-![mtp](./figures/mtp.jpg){ width="1500" }
+<img src="./figures/mtp.jpg" width="1500">
 
 # 模块间输入输出参数汇总
 
