@@ -19,9 +19,7 @@ ADMONITION_TYPES = {
 }
 
 PATTERN = re.compile(
-    r"^([ \t]*)> \[!("
-    + "|".join(ADMONITION_TYPES.keys())
-    + r")\](.*?)$\n((?:\1>(?: .*)?$\n)*)",
+    r"^([ \t]*)> \[!(" + "|".join(ADMONITION_TYPES.keys()) + r")\](.*?)$\n((?:\1>(?: .*)?$\n)*)",
     re.MULTILINE,
 )
 
@@ -44,9 +42,7 @@ def on_page_markdown(markdown, **kwargs):
             if line.strip() == "":
                 converted_lines.append("")
             else:
-                content = re.sub(
-                    r"^" + re.escape(indent) + r">\s?", "", line
-                )
+                content = re.sub(r"^" + re.escape(indent) + r">\s?", "", line)
                 converted_lines.append(f"{indent}    {content}")
 
         body = "\n".join(converted_lines).rstrip()
