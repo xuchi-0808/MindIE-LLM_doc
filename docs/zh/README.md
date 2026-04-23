@@ -15,8 +15,8 @@ MindIE LLM（Mind Inference Engine Large Language Model）是 MindIE 下的大�
 根据你的使用场景选择入口：
 
 - 使用 MindIE LLM 运行模型推理，推荐从 [快速入门](user_guide/quick_start/quick_start.md) 开始
-- 安装部署 MindIE LLM，推荐从 [安装指南](user_guide/install/README.md) 开始
-- 进行服务化部署和参数调优，推荐从 [使用手册](user_guide/user_manual/README.md) 开始
+- 安装部署 MindIE LLM，推荐从 [安装指南](user_guide/install/installation_introduction.md) 开始
+- 进行服务化部署和参数调优，推荐从 [使用手册](user_guide/user_manual/introduction.md) 开始
 - 了解支持的模型和特性，推荐从 [模型支持列表](user_guide/model_support_list.md) 和 [特性总览](user_guide/feature/README.md) 开始
 - 参与模型迁移适配开发，推荐从 [开发指南](developer_guide/architecture_design/architecture_overview.md) 开始
 
