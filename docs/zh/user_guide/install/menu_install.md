@@ -12,7 +12,7 @@
 - [卸载](./source/uninstallation.md)
 - [安全与加固]()
   - [安全管理](./security_management_and_hardening/security_management.md)
-  - [信息泄露风险提醒](./security_management_and_hardening/nofification_of_data_disclosure_risks.md)
+  - [信息泄露风险提醒](./security_management_and_hardening/notification_of_data_disclosure_risks.md)
   - [安全加固须知](./security_management_and_hardening/security_hardening_precautions.md)
   - [Host加固]()
     - [禁止使用root账户远程访问系统](./security_management_and_hardening/prohibiting_the_root_user_from_remotely.md)
