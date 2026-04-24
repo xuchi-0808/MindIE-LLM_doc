@@ -18,7 +18,7 @@ MindIE LLM（Mind Inference Engine Large Language Model）是 MindIE 下的大�
 - 安装部署 MindIE LLM，推荐从 [安装指南](user_guide/install/installation_introduction.md) 开始
 - 进行服务化部署和参数调优，推荐从 [使用手册](user_guide/user_manual/introduction.md) 开始
 - 了解支持的模型和特性，推荐从 [模型支持列表](user_guide/model_support_list.md) 和 [特性总览](user_guide/feature/README.md) 开始
-- 参与模型迁移适配开发，推荐从 [开发指南](developer_guide/architecture_design/architecture_overview.md) 开始
+- 参与模型迁移适配与特性开发，推荐从 [开发指南](developer_guide/architecture_design/architecture_overview.md) 开始
 
 ## 核心能力
 
@@ -46,7 +46,7 @@ MindIE LLM 总体架构分为四层：
 - **Server**：推理服务端，提供 RESTful 接口，支持 Triton/OpenAI/TGI/vLLM 主流推理框架请求接口
 - **LLM Manager**：负责状态管理及任务调度，基于调度策略实现请求组 batch，统一内存池管理 KV Cache
 - **Text Generator**：负责模型配置、初始化、加载、自回归推理流程、后处理
-- **Modeling**：提供性能调优后的模块和内置模型，支持 ATB Models 和 MindSpore Models 两种框架
+- **Modeling**：提供性能调优后的模块和内置模型，支持 ATB Models
 
 详见 [架构概览](developer_guide/architecture_design/architecture_overview.md)。
 
