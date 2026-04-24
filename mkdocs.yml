@@ -13,7 +13,7 @@ theme:
   favicon: assets/ascend-favicon.ico
   font:
     text: Roboto
-    code: Roboto Mono
+    code: false
   icon:
     repo: fontawesome/brands/git-alt
   palette:
