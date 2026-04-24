@@ -83,8 +83,8 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.keys
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji # noqa
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg # noqa
+      emoji_index: !!python/name:material.extensions.emoji.twemoji # yamllint disable-lint
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg # yamllint disable-lint
   - toc:
       permalink: true
 
