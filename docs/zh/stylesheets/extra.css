@@ -93,7 +93,7 @@
 
 .md-typeset code,
 .md-typeset pre > code {
-  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+  font-family: 'Cascadia Code', 'JetBrains Mono', ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
   white-space: pre;
   -moz-tab-size: 8;
        tab-size: 8;
